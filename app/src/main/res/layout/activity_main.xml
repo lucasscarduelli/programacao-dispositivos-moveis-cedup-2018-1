@@ -3,14 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="br.com.cedup.cedup20181.MainActivity">
 
     <TextView
-        android:id="@+id/texto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="@string/usuario"
+        android:labelFor="@id/campoUsuario"/>
 
+    <EditText android:id="@+id/campoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        android:labelFor="@id/campoSenha"/>
+
+    <EditText android:id="@+id/campoSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <Button android:id="@+id/botaoLogar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/logar"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>
