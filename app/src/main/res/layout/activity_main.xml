@@ -34,6 +34,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="@string/logar"
-        android:textColor="#ffffff"/>
+        android:textColor="#000"
+        android:onClick="onClickLogar"/>
 
 </LinearLayout>
