@@ -1,5 +1,6 @@
 package br.com.cedup.cedup20181;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
 
         if ("lucas".equalsIgnoreCase(usuario) && "abc123".equalsIgnoreCase(senha)) {
             alert(getString(R.string.mensagemLoginSucesso));
+
+            Intent intent = new Intent(this, BemVindoActivity.class);
+
+            Bundle params = new Bundle();
+            params.putString("login",usuario);
+            intent.putExtras(params);
+
+            startActivity(intent);
+
+            finish();
+
         } else {
             alert(getString(R.string.mensagemLoginErro));
         }
