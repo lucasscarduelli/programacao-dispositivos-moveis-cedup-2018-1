@@ -8,3 +8,4 @@ Repositório da aplicação de exemplo da matéria de Programação para Disposi
  - [Aula 03 - Hello World - Estrutura do projeto e criação de emulador](https://docs.google.com/presentation/d/1MhXqdqDqS3xPPVivCzBFxiBc0fDQ3zNRoL2U3Ob2zNw/edit?usp=sharing)
  - [Aula 04 - Conhecendo sobre leiaute e tratamento de eventos](https://docs.google.com/presentation/d/1nWTVJRnRb50sJuWuCuu-eOn9JnE4AktrYO3j1VfrDh8/edit?usp=sharing)
  - [Aula 05 - Tratamento de eventos, intents e intent-filters](https://docs.google.com/presentation/d/17cZGE7tc50dc0suRXzu508IRU4t8c9QDcJ9v0myvSbU/edit?usp=sharing)
+ - [Aula 06 - Manipulação de telas](https://docs.google.com/presentation/d/1IA5cL0_f8Z-vV8uXDNK0SLCY6QmKb71wUt0uMsNGhqc/edit?usp=sharing)
