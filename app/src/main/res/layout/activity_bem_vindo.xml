@@ -14,4 +14,18 @@
         android:gravity="center"
         android:text="@string/seja_bem_vindo"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dialogo_mensagem"
+        android:onClick="abrirDialogoMensagem"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/dialogo_lista"
+        android:onClick="abrirDialogoLista"/>
+
 </LinearLayout>

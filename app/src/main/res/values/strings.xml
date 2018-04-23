@@ -7,4 +7,17 @@
     <string name="mensagemLoginSucesso">Login realizado com sucesso!</string>
     <string name="mensagemLoginErro">Usuario ou senha invalido!</string>
     <string name="seja_bem_vindo">Seja bem vindo</string>
+    <string name="dialogo_mensagem">Dialogo Mensagem</string>
+    <string name="confirmacao_exclusao">Confirmacao de exclusao</string>
+    <string name="mensagem_confirmacao_exclusao">Deseja realmente excluir?</string>
+    <string name="dialogo_lista">Dialogo Lista</string>
+    <string name="selecione_estado">Selecione um estado</string>
+
+
+    <array name="lista_estados">
+        <item>PR - Parana</item>
+        <item>SC - Santa Catarina</item>
+        <item>RS - Rio Grande do Sul</item>
+    </array>
+
 </resources>
