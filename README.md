@@ -11,3 +11,4 @@ Repositório da aplicação de exemplo da matéria de Programação para Disposi
  - [Aula 06 - Manipulação de telas](https://docs.google.com/presentation/d/1IA5cL0_f8Z-vV8uXDNK0SLCY6QmKb71wUt0uMsNGhqc/edit?usp=sharing)
  - [Aula 07 - Falando com o usuário! AlertDialog e Toast](https://docs.google.com/presentation/d/1JAcrsMGE4_YhfaGLPMIWgi8TvpC4vaqJYCv2Yxql1SM/edit?usp=sharing)
  - [Aula 08 - Organizando e embelezando o layout e conectando com o banco de dados SQLite](https://docs.google.com/presentation/d/1N0jL65rcT8NFaHaAy2J2QsGmF1obhXd1Ykx-5aEPuvA/edit?usp=sharing)
+ - [Aula 09 -  Criando o CRUD (Create, Retrieve, Update e Delete)](https://docs.google.com/presentation/d/1SE0WeVOG6fT6nBweQxxniRkLdBJdQwo52Q9aSy6sVSA/edit?usp=sharing)
