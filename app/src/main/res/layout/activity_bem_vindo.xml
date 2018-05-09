@@ -28,4 +28,16 @@
         android:text="@string/dialogo_lista"
         android:onClick="abrirDialogoLista"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Produtos"
+        android:onClick="abrirCadastroProduto"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tela com Tab"
+        android:onClick="abrirTelaComTab"/>
+
 </LinearLayout>

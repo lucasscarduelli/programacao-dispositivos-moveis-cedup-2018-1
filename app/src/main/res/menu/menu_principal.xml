@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/opcao1" android:title="Opcao 1"></item>
+    <item android:id="@+id/opcao2" android:title="Opcao 2"></item>
+    <item android:id="@+id/opcao3" android:title="Opcao 3"></item>
+    <item android:id="@+id/opcao4" android:title="Opcao 4">
+        <menu>
+            <item android:id="@+id/opcao41" android:title="Opcao 4.1"></item>
+            <item android:id="@+id/opcao42" android:title="Opcao 4.2"></item>
+        </menu>
+    </item>
+</menu>

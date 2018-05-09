@@ -15,7 +15,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BemVindoActivity" />
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CadastroProdutoActivity" />
+        <activity android:name=".ConsultaProdutoActivity" />
+        <activity android:name=".TelaComTabActivity"></activity>
     </application>
 
 </manifest>

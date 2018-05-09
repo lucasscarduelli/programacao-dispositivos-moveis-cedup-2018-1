@@ -4,9 +4,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,12 +24,35 @@ public class BemVindoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bem_vindo);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Bem vindo");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         Intent intent = getIntent();
         Bundle args = intent.getExtras();
         String login = args.getString("login");
 
         mensagemBemVindo = findViewById(R.id.mensagemBemVindo);
         mensagemBemVindo.setText(getText(R.string.seja_bem_vindo) + ", " + login);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.opcao1:
+                Toast.makeText(this, "Opcao 01", Toast.LENGTH_LONG).show();
+                break;
+            default:
+                super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 
     public void abrirDialogoMensagem(View view) {
@@ -83,13 +110,16 @@ public class BemVindoActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
+    }
 
+    public void abrirCadastroProduto(View view) {
+        Intent intent = new Intent(this, CadastroProdutoActivity.class);
+        startActivity(intent);
+    }
 
-
-
-
-
-
+    public void abrirTelaComTab(View view) {
+        Intent intent = new Intent(this, TelaComTabActivity.class);
+        startActivity(intent);
 
     }
 }
