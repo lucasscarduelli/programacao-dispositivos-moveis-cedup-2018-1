@@ -4,10 +4,14 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
 import br.com.cedup.cedup20181.controller.ProdutoController;
 
@@ -47,6 +51,31 @@ public class ConsultaProdutoActivity extends AppCompatActivity {
         });
 
         lista.setAdapter(adapter);
+        registerForContextMenu(lista);
+    }
 
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View view,
+        ContextMenu.ContextMenuInfo menuInfo) {
+
+        super.onCreateContextMenu(menu, view, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_lista, menu);
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_editar :
+                Toast.makeText(this,
+                 "Voce esta editando!", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.menu_excluir:
+                Toast.makeText(this,
+                 "Voce esta excluindo!", Toast.LENGTH_LONG).show();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
     }
 }

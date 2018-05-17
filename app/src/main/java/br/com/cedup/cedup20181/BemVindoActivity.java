@@ -46,7 +46,16 @@ public class BemVindoActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case android.R.id.home:
+                Toast.makeText(this, "Home", Toast.LENGTH_LONG).show();
+                break;
+
             case R.id.opcao1:
+
+                Intent intent = new Intent(this,
+                        MenuLateral2Activity.class);
+                startActivity(intent);
+
                 Toast.makeText(this, "Opcao 01", Toast.LENGTH_LONG).show();
                 break;
             default:
