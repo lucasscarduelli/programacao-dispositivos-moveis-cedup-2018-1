@@ -2,10 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/menu_lateral_opcao1" android:title="Opcao 1"></item>
-        <item android:id="@+id/menu_lateral_opcao2" android:title="Opcao 2"></item>
-        <item android:id="@+id/menu_lateral_opcao3" android:title="Opcao 3"></item>
-        <item android:id="@+id/menu_lateral_configuracoes" android:title="Configuracoes"></item>
-        <item android:id="@+id/menu_lateral_sobre" android:title="Sobre"></item>
+        <item android:id="@+id/menu_lateral_opcao1"
+            android:title="Opcao 1"></item>
+        <item android:id="@+id/menu_lateral_opcao2"
+            android:title="Opcao 2"></item>
+        <item android:id="@+id/menu_lateral_opcao3"
+            android:title="Opcao 3"></item>
+        <item android:id="@+id/menu_lateral_configuracoes"
+            android:title="Configuracoes"></item>
+        <item android:id="@+id/menu_lateral_sobre"
+            android:title="Sobre"></item>
     </group>
 </menu>

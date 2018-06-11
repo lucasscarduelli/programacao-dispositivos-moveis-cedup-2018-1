@@ -40,4 +40,10 @@
         android:text="Tela com Tab"
         android:onClick="abrirTelaComTab"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tela com Menu Lateral"
+        android:onClick="abrirTelaComMenuLateral"/>
+
 </LinearLayout>

@@ -1,9 +1,13 @@
 package br.com.cedup.cedup20181;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +38,15 @@ public class BemVindoActivity extends AppCompatActivity {
 
         mensagemBemVindo = findViewById(R.id.mensagemBemVindo);
         mensagemBemVindo.setText(getText(R.string.seja_bem_vindo) + ", " + login);
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_CONTACTS) !=
+                PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.READ_CONTACTS}, 1);
+
+        }
+
     }
 
     @Override
@@ -129,6 +142,11 @@ public class BemVindoActivity extends AppCompatActivity {
     public void abrirTelaComTab(View view) {
         Intent intent = new Intent(this, TelaComTabActivity.class);
         startActivity(intent);
+    }
 
+    public void abrirTelaComMenuLateral(View view) {
+        Intent intent = new Intent(this,
+                MenuLateral2Activity.class);
+        startActivity(intent);
     }
 }
