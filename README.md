@@ -14,3 +14,4 @@ Repositório da aplicação de exemplo da matéria de Programação para Disposi
  - [Aula 09 -  Criando o CRUD (Create, Retrieve, Update e Delete)](https://docs.google.com/presentation/d/1SE0WeVOG6fT6nBweQxxniRkLdBJdQwo52Q9aSy6sVSA/edit?usp=sharing)
  - [Aula 10 - Outros recursos de layout: ScrollView, TabWidget, Listas e Menus](https://docs.google.com/presentation/d/1-H-t739CDJWoZNiyRtw8tzYH-Uoer-SsItCJAmYy35Q/edit?usp=sharing)
  - [Aula 11 - Menu lateral deslizante](https://docs.google.com/presentation/d/1hmvr_l1A5_TTviPLCUl4_IeIHZl_Zsdqf4QwtOrzheU/edit?usp=sharing)
+ - [Aula 12 - Permissões](https://docs.google.com/presentation/d/1fAunPZxuWPF88JUChCGopepAdd3OC_5YmRexf6UPKXo/edit?usp=sharing)
